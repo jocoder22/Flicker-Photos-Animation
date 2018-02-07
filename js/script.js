@@ -23,21 +23,25 @@ function ajaxCall2() {
   return new Promise(function(resolve, reject) {
     var data = $.getJSON(flickerUrl, {
       tag: 'beach',
-      format: 'mkjson'
+      format: 'hjson'
     });
     resolve(data);
-    reject(err);
+    reject();
   });
 }
 
 
 
 ajaxCall2().then(data => {
-  $.each(data.items, (index, item) => {
-    imageArray.push(item.media.m);
+  var bdata =  data.items;
+  // $.each(data.items, (index, item) => {
+  //   imageArray.push(item.media.m);
+  // });
+  bdata.forEach(item => {
+    imageArray.push(item.media.m)
   });
-}).catch(err => {
-  alert('this is an error: ' + err)
+}).catch(() => {
+    alert('There is an error: Flickr API not responding');
 })
 
 
