@@ -23,7 +23,7 @@ function ajaxCall2() {
   return new Promise(function(resolve, reject) {
     var data = $.getJSON(flickerUrl, {
       tag: 'beach',
-      format: 'hjson'
+      format: 'json'
     });
     resolve(data);
     reject();
