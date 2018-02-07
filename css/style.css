@@ -12,3 +12,9 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
+.img1,
+.img2,
+.img3 {
+  width: 33%;
+}
