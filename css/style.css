@@ -14,3 +14,9 @@ body {
   /* flex-flow: row wrap;
   justify-content: space-around; */
 }
+
+.img1,
+.img2,
+.img3 {
+  width: 33%;
+}
