@@ -17,39 +17,26 @@
 
 flickerUrl = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 var imageArray = [];
-// var ajaxCall = new Promise((resolve, reject) => {
-// let ajaxCall = () => {
-//   return new Promise((resolve, reject) => {
-//     $.getJSON(flickerUrl, {
-//       tag: 'beach',
-//       format: 'json'
-//     }).resolve(data) =>{
-//       return data;
-//     }).reject(err) =>{
-//       alert('error :' + err);
-//     });
-// });
-
 
 
 function ajaxCall2() {
   return new Promise(function(resolve, reject) {
-    $.getJSON(flickerUrl, {
+    var data = $.getJSON(flickerUrl, {
       tag: 'beach',
-      format: 'json'
-    }).then(resolve(data) => {
-    return data;
-    }).catch(reject(err) => {
-    alert('this is error: ' + err)
+      format: 'mkjson'
+    });
+    resolve(data);
+    reject(err);
   });
 }
 
 
 
-
-ajaxCall2().then((data) => {
-  console.log(data);
-}).catch((err) => {
+ajaxCall2().then(data => {
+  $.each(data.items, (index, item) => {
+    imageArray.push(item.media.m);
+  });
+}).catch(err => {
   alert('this is an error: ' + err)
 })
 
