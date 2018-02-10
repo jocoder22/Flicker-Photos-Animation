@@ -7,7 +7,6 @@
 
 html,
 body {
-  height: 100%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -15,8 +14,21 @@ body {
   justify-content: space-around; */
 }
 
+.imageholder {
+  width: 100%;
+}
 
 .img {
-  width: 33%vw;
-  height: 33%vh;
+  width: 32%;
+  height: 300px;
+}
+
+
+.header{
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  height: 40px;
 }
