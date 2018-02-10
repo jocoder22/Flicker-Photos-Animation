@@ -24,11 +24,19 @@ body {
 }
 
 
-.header{
+.genholder {
   width: 100%;
   background-color: black;
   color: white;
   font-size: 30px;
   text-align: center;
-  height: 40px;
+}
+
+.header {
+  height: 60px;
+}
+
+.footer {
+  height: 100px;
+  padding: 15px 0;
 }
