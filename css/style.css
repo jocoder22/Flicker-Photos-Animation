@@ -10,8 +10,7 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  /* flex-flow: row wrap;
-  justify-content: space-around; */
+  background-color: black;
 }
 
 .imageholder {
@@ -26,7 +25,6 @@ body {
 
 .genholder {
   width: 100%;
-  background-color: black;
   color: white;
   font-size: 30px;
   text-align: center;
