@@ -35,7 +35,7 @@ function photoAnimation(image, n) {
     setInterval(() => {
       i = (i + 1) % imageArray.length;
       imageN.attr("src", imageArray[i]);
-    }, 4000);
+    }, 2000);
   });
 }
 
