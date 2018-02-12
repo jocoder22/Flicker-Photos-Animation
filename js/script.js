@@ -23,8 +23,9 @@ ajaxCall2(flickerUrl).then(data => {
   bdata.forEach(item => {
     imageArray.push(item.media.m)
   });
+  $(".span1").append("This product uses the Flickr API but is not endorsed or certified by Flickr.")
 }).catch(error => {
-    alert('There is an error: Flickr API not responding \n' + error);
+    $("#error0").append("<span> There is an error: Flickr API not responding</span> " + "<p>" + error.message +"</p>");
 });
 
 
@@ -38,6 +39,7 @@ function photoAnimation(image, n) {
     }, 2000);
   });
 }
+
 
 photoAnimation('#img0', 0);
 photoAnimation('#img1', 1);
