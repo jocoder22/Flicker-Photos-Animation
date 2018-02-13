@@ -23,9 +23,9 @@ ajaxCall2(flickerUrl).then(data => {
   bdata.forEach(item => {
     imageArray.push(item.media.m)
   });
-  $(".span1").append("This product uses the Flickr API but is not endorsed or certified by Flickr.")
+  $(".span1").append("This product uses the Flickr API but is not endorsed or certified by Flickr.");
 }).catch(error => {
-    $("#error0").append("<span> There is an error: Flickr API not responding</span> " + "<p>" + error.message +"</p>");
+    $(".header").append("<div class='genholder footer'><p>Error Message :</p> <p>Failed to load resource : </p><p>the server responded with a status of " + error.status +"</p></div>")
 });
 
 
