@@ -1,5 +1,4 @@
-
-flickerUrl = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+flickerUrl = "https://api.flickr.com/services3333/feeds/photos_public.gne?jsoncallback=?";
 var imageArray = [];
 
 function ajaxCall2(url) {
@@ -8,10 +7,10 @@ function ajaxCall2(url) {
       tag: 'beach',
       format: 'json'
     }).done(data => {
-    for (var i = 0; i < 6; i++) {
-      $('#img'+ i).attr("src", data.items[i].media.m)
-    }
-  });
+      for (var i = 0; i < 6; i++) {
+        $('#img' + i).attr("src", data.items[i].media.m);
+      }
+    });
     resolve(data);
     reject(error);
   });
@@ -25,7 +24,7 @@ ajaxCall2(flickerUrl).then(data => {
   });
   $(".span1").append("This product uses the Flickr API but is not endorsed or certified by Flickr.");
 }).catch(error => {
-    $(".header").append("<div class='genholder footer'><p>Error Message :</p> <p>Failed to load resource : </p><p>the server responded with a status of " + error.status +"</p></div>")
+  $(".header").append("<div class='genholder footer'><p>Error Message :</p> <p>Failed to load resource : </p><p>the server responded with a status of " + error.status + "</p></div>");
 });
 
 
