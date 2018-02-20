@@ -1,4 +1,4 @@
-flickerUrl = "https://api.flickr.com/services3333/feeds/photos_public.gne?jsoncallback=?";
+flickerUrl = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 var imageArray = [];
 
 function ajaxCall2(url) {
