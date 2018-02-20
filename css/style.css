@@ -7,24 +7,27 @@
 
 html,
 body {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   background-color: black;
 }
 
 .imageholder {
-  width: 100%;
+  width: 100vw;
+  justify-content: space-around;
 }
 
 .img {
-  width: 33%;
-  height: 300px;
+  width: calc(96vw / 3);
+  height: calc((99vh - 160px)/2);
 }
 
 
 .genholder {
-  width: 100%;
+  width: 100vw;
   color: white;
   font-size: 30px;
   text-align: center;
