@@ -5,9 +5,9 @@ Display animation of Flicker pubic photos
 This app display photo animation of public pictures from flickr api. The app display new sets of picture each time the browser is refreshed give users new animation.
 
 # Operating Instruction
-Open [app](http://www.jocoder22.com/flickrphoto) on any web browser.
+Open [app](http://www.jocoder22.com/flickrphoto) or open website - http://www.jocoder22.com/flickrphoto - on any web browser.
 
 # References
-[Flickr](https://www.flickr.com/)
+[Flickr](https://www.flickr.com/) or open the website - https://wwww.flickr.com
 
 - Note: The App uses Flickr API but endorsed or certified by Flickr.
